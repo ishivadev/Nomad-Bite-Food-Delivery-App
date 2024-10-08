@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Shiva/Desktop/Web Development Project/Food Delivery/Backend",
-      "program": "c:/Users/Shiva/Desktop/Web Development Project/Food Delivery/Backend/build/Debug/outDebug",
+      "cwd": "c:/Users/Shiva/Desktop/Web Development Project/Food Delivery/Frontend/src/Pages/Verify",
+      "program": "c:/Users/Shiva/Desktop/Web Development Project/Food Delivery/Frontend/src/Pages/Verify/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
