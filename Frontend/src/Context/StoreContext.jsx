@@ -7,7 +7,8 @@ export const StoreContext = createContext(null)
 const StoreContextProvider = (props) => {
 
     const [cartItems, setCartItems] = useState({})
-    const url = "http://localhost:4000"
+    const url = "https://nomad-bite-backend.onrender.com"
+    // const url = "http://localhost:4000"
     const [token, setToken] = useState("")
     const [food_list, setFoodList] = useState([])
 
@@ -37,7 +38,7 @@ const StoreContextProvider = (props) => {
     const loadCartData = async (token) => {
         //console.log(token);
         
-        const response =  await axios.post(url+"/api/cart/get", {}, {headers: {token}})
+        const response =  await axios.post(url+"/api/cart/get", {}, {headers: {token}}) //'token' sent from here will be use in middleware > auth.js
         setCartItems(response.data.cartData)
         //console.log(response.data.cartData);
         
@@ -50,7 +51,7 @@ const StoreContextProvider = (props) => {
             await fetchFoodList();    // Fetch the food list from the fetchFoodList function
             if (localStorage.getItem("token")) { //Check and keep sign-in user if the token if available
                 setToken(localStorage.getItem("token"))
-                await loadCartData(localStorage.getItem("token"))
+                await loadCartData(localStorage.getItem("token")) //Passing the token here
             }
         }
         loadData(); //Calling the loadData funciton

@@ -33,12 +33,12 @@ const onChangeHandler = (event) => {
 
 // Function to place the order
 const placeOder = async (event) => {
-  event.preventDefault();  // Prevent the default form submission behavior
+  event.preventDefault();
   let orderItems = [];
   // Loop through the food list and add items to the order if they are in the cart
   food_list.map((item) => {
     if(cartItems[item._id] > 0) {
-      let itemInfo = item;
+      let itemInfo = item; //copying item details in itemInfo object
       itemInfo["quantity"] = cartItems[item._id]; // Create a copy of the item and add the quantity to it
       orderItems.push(itemInfo);
       //console.log("Iteminfo data = ", itemInfo);
@@ -65,6 +65,7 @@ const placeOder = async (event) => {
 
 const navigate = useNavigate();
 
+//Not allow to navigate to order page until login and also if 'cart' is empty.
   useEffect(() => {
    if (!token) {
       navigate('/cart')
@@ -74,6 +75,7 @@ const navigate = useNavigate();
     }
   },[token])
 
+  
   return (
     <form onSubmit={placeOder} className='place-order'>
       <div className="place-order-left">

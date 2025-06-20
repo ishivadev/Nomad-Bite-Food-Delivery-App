@@ -1,0 +1,8 @@
+Run Backend:-
+node server.js
+
+Run Frontend:-
+npm run dev
+
+Run Admin:-
+npm run dev

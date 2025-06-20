@@ -9,6 +9,7 @@ const ExploreMenu = ({onCategory, onSetCategory}) => {
       <h1>Explore our menu</h1>
       <p className='explore-menu-text'>Discover a vibrant menu that showcases a rich tapestry of flavors and cuisines. Our passion is to craft unforgettable dining experiences, carefully curating each dish to delight your senses and leave you craving for more.</p>
       <div className="explore-menu-list">
+
         {menu_list.map((item, index)=> {
             return (
                 <div onClick={()=> onSetCategory(prev => prev===item.menu_name?"All":item.menu_name)} key={index} className="explore-menu-list-item">
@@ -17,6 +18,7 @@ const ExploreMenu = ({onCategory, onSetCategory}) => {
                 </div>
             )
         })}
+        
       </div>
       <hr />
     </div>
