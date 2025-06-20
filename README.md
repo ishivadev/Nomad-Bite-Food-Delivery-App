@@ -36,29 +36,30 @@ Check out the live deployed version here:
 
 ## 📦 Getting Started
 
-### 1. Clone the Repository
+### Clone the Repository
 
-```bash
 git clone https://github.com/ishivadev/Nomad-Bite-Food-Delivery-App.git
 cd Nomad-Bite-Food-Delivery-App
 
+---
 
-🤝 Contributing
-Fork the repo
+## 🤝 Contributing
+### Fork the repo
 
-Create a new branch: git checkout -b feature/your-feature
+- ** Create a new branch: git checkout -b feature/your-feature
+- ** Commit your changes
+- ** Push to the branch
+- ** Open a pull request 🚀
 
-Commit your changes
+---
 
-Push to the branch
-
-Open a pull request 🚀
-
-📄 License
+## 📄 License
 This project is licensed under the MIT License.
 See LICENSE for more info.
 
-👨‍💻 Author
+---
+
+## 👨‍💻 Author
 Built by @ishivadev with ❤️
 
 
