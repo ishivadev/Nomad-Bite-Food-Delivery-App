@@ -10,7 +10,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
 
-  const URL = "http://localhost:4000";
+  const URL = "https://nomad-bite-backend.onrender.com";
+  // const URL = "http://localhost:4000";
 
   return (
     <div>
