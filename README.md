@@ -1,6 +1,6 @@
 # 🍔 Nomad Bite – Food Delivery Web App
 
-A modern and responsive food delivery app built with **React**, **Vite**, and **modern web tooling**. Users can browse restaurants, add meals to a cart, checkout, and track their orders.
+A modern and responsive food delivery app built with **React**, **Node**, **Express** and **MongoDB**, and **modern web tooling**. Users can browse add meals to a cart, checkout, and track their orders.
 
 ---
 
